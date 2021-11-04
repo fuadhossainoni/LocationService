@@ -31,7 +31,7 @@ public class LocationController {
 		Location locationSaved = service.saveLocation(location);
 		String msg= "Location saved with id: "+locationSaved.getId();
 		modelMap.addAttribute("msg", msg);
-		emailUtil.sendEmail("RECIEVER EMAIL HERE WITH QUOTE", "Location Saved", "Location Saved Successfully");
+		//emailUtil.sendEmail("RECIEVER EMAIL HERE WITH QUOTE", "Location Saved", "Location Saved Successfully");
 		return "createLocation";
 	}
 	
